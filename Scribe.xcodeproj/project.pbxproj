@@ -14,6 +14,8 @@
 		35634B191E8D5E0B0046E23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35634B181E8D5E0B0046E23B /* Assets.xcassets */; };
 		35634B1C1E8D5E0B0046E23B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35634B1A1E8D5E0B0046E23B /* LaunchScreen.storyboard */; };
 		35634B271E8D5E0B0046E23B /* ScribeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35634B261E8D5E0B0046E23B /* ScribeTests.swift */; };
+		35634B381E8DE7320046E23B /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35634B371E8DE7320046E23B /* CircleButton.swift */; };
+		35E5853D1E8DECBE004A2319 /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 35E5853C1E8DECBE004A2319 /* test.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		35634B221E8D5E0B0046E23B /* ScribeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScribeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35634B261E8D5E0B0046E23B /* ScribeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribeTests.swift; sourceTree = "<group>"; };
 		35634B281E8D5E0B0046E23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35634B371E8DE7320046E23B /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		35E5853C1E8DECBE004A2319 /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +83,12 @@
 		35634B0D1E8D5E0B0046E23B /* Scribe */ = {
 			isa = PBXGroup;
 			children = (
-				35634B0E1E8D5E0B0046E23B /* AppDelegate.swift */,
-				35634B101E8D5E0B0046E23B /* ViewController.swift */,
-				35634B121E8D5E0B0046E23B /* Main.storyboard */,
-				35634B181E8D5E0B0046E23B /* Assets.xcassets */,
-				35634B1A1E8D5E0B0046E23B /* LaunchScreen.storyboard */,
-				35634B1D1E8D5E0B0046E23B /* Info.plist */,
-				35634B151E8D5E0B0046E23B /* Scribe.xcdatamodeld */,
+				35634B331E8DE6650046E23B /* Model */,
+				35634B321E8DE65F0046E23B /* View */,
+				35634B311E8DE6560046E23B /* Controller */,
+				35634B341E8DE66B0046E23B /* Protocols */,
+				35634B351E8DE6730046E23B /* Extensions */,
+				35634B361E8DE67A0046E23B /* References */,
 			);
 			path = Scribe;
 			sourceTree = "<group>";
@@ -97,6 +100,57 @@
 				35634B281E8D5E0B0046E23B /* Info.plist */,
 			);
 			path = ScribeTests;
+			sourceTree = "<group>";
+		};
+		35634B311E8DE6560046E23B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				35634B101E8D5E0B0046E23B /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		35634B321E8DE65F0046E23B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35634B121E8D5E0B0046E23B /* Main.storyboard */,
+				35634B1A1E8D5E0B0046E23B /* LaunchScreen.storyboard */,
+				35634B371E8DE7320046E23B /* CircleButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		35634B331E8DE6650046E23B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35634B0E1E8D5E0B0046E23B /* AppDelegate.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		35634B341E8DE66B0046E23B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		35634B351E8DE6730046E23B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		35634B361E8DE67A0046E23B /* References */ = {
+			isa = PBXGroup;
+			children = (
+				35E5853C1E8DECBE004A2319 /* test.m4a */,
+				35634B181E8D5E0B0046E23B /* Assets.xcassets */,
+				35634B1D1E8D5E0B0046E23B /* Info.plist */,
+				35634B151E8D5E0B0046E23B /* Scribe.xcdatamodeld */,
+			);
+			name = References;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +203,7 @@
 				TargetAttributes = {
 					35634B0A1E8D5E0B0046E23B = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CJ5D95MN34;
 						ProvisioningStyle = Automatic;
 					};
 					35634B211E8D5E0B0046E23B = {
@@ -182,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E5853D1E8DECBE004A2319 /* test.m4a in Resources */,
 				35634B1C1E8D5E0B0046E23B /* LaunchScreen.storyboard in Resources */,
 				35634B191E8D5E0B0046E23B /* Assets.xcassets in Resources */,
 				35634B141E8D5E0B0046E23B /* Main.storyboard in Resources */,
@@ -205,6 +261,7 @@
 				35634B111E8D5E0B0046E23B /* ViewController.swift in Sources */,
 				35634B0F1E8D5E0B0046E23B /* AppDelegate.swift in Sources */,
 				35634B171E8D5E0B0046E23B /* Scribe.xcdatamodeld in Sources */,
+				35634B381E8DE7320046E23B /* CircleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CJ5D95MN34;
 				INFOPLIST_FILE = Scribe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Scribe;
@@ -355,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CJ5D95MN34;
 				INFOPLIST_FILE = Scribe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Scribe;
@@ -410,6 +469,7 @@
 				35634B2D1E8D5E0B0046E23B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35634B2E1E8D5E0B0046E23B /* Build configuration list for PBXNativeTarget "ScribeTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +478,7 @@
 				35634B301E8D5E0B0046E23B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
